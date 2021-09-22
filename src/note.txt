@@ -1,0 +1,54 @@
+class component
+
+import React,{Component} from "react";
+
+
+class User extends Component{
+ 
+    render() {
+      return(
+      <div>
+          
+      </div> 
+      
+  
+      )
+      }
+  }
+  export default User;
+
+
+-----------------------------------------------
+
+functional component
+  
+
+import React from "react";
+
+
+const Spinner=()=>{
+
+        
+        return (
+            <div>
+               
+            </div>
+
+
+        )
+    }
+
+export default Spinner;
+-----------------------------------------------------
+
+
+“useContext” hook is used to create common data that can be accessed throughout 
+the component hierarchy without passing the props down manually to each level.
+ Context defined will be available to all the child components without involving “props”.
+
+useEffect
+ // Similar to componentDidMount and componentDidUpdate:
+// Update the document title using the browser API
+useEffect(callback[, dependencies]);
+callback is the function containing the side-effect logic. callback is executed right after changes were being pushed to DOM.
+dependencies is an optional array of dependencies. useEffect() executes callback only if the dependencies have changed between renderings.
